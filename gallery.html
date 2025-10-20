@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo &amp; Media Gallery | Summit Ridge PTA</title>
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Summit Ridge PTA</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          &#9776;
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="membership.html">Membership</a>
+          <a href="news.html">Announcements</a>
+          <a href="events.html">Events</a>
+          <a class="active" href="gallery.html">Gallery</a>
+          <a href="donate.html">Give</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="documents.html">Resources</a>
+          <a href="social.html">Connect</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section-title">Photo &amp; Media Gallery</h1>
+        <p class="section-subtitle">
+          Relive our favorite PTA moments! We keep this page curated with a rotating highlight
+          reel and link out to complete albums hosted on services with robust sharing features.
+        </p>
+
+        <div class="gallery-grid">
+          <img src="assets/images/gallery-placeholder-1.jpg" alt="Students exploring a science exhibit" />
+          <img src="assets/images/gallery-placeholder-2.jpg" alt="Families enjoying a picnic" />
+          <img src="assets/images/gallery-placeholder-3.jpg" alt="Volunteers handing out art supplies" />
+          <img src="assets/images/gallery-placeholder-4.jpg" alt="Teachers receiving appreciation gifts" />
+        </div>
+        <p>
+          Replace the placeholder images above with photos that you store in the repository or
+          link from a CDN. Always ensure you have photo release permissions before posting.
+        </p>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <h2 class="section-title">Best Options for Hosting Albums</h2>
+          <ul class="feature-list">
+            <li>
+              <strong>Google Photos:</strong> Create shareable albums, organize by school year, and
+              embed highlight reels with simple iframe snippets.
+            </li>
+            <li>
+              <strong>SmugMug:</strong> Offers password-protected galleries, watermarking, and
+              easy download controls for families.
+            </li>
+            <li>
+              <strong>Flickr:</strong> Affordable storage, tagging, and community moderation tools.
+            </li>
+            <li>
+              <strong>SharePoint / OneDrive:</strong> Ideal if the district already uses Microsoft 365
+              for staff accounts.
+            </li>
+          </ul>
+        </div>
+        <div class="callout">
+          <h3>Embedding External Galleries</h3>
+          <p>
+            Many services provide embed codes you can paste directly into this page. For example,
+            Google Photos offers a <em>"Create Link"</em> option with HTML you can drop into a
+            <code>&lt;iframe&gt;</code>. Keep accessibility in mind by including descriptive alt text.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Share Your Photos</h2>
+        <p>
+          Send event photos to <a href="mailto:media@summitridgepta.org">media@summitridgepta.org</a>
+          or upload them to our shared Google Drive folder. Our communications team reviews each
+          submission before publishing.
+        </p>
+        <blockquote>
+          “The gallery is my favorite way to show grandparents what we’ve been up to. Thanks for
+          keeping it current!” — 4th Grade Parent
+        </blockquote>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h4>Summit Ridge PTA</h4>
+          <p>1234 Summit Ave · Springfield, ST 99999</p>
+          <p>
+            <a href="mailto:info@summitridgepta.org">info@summitridgepta.org</a> ·
+            <a href="tel:18005551234">(800) 555-1234</a>
+          </p>
+        </div>
+        <div>
+          <h4>Stay Connected</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a>
+            <a href="social.html#newsletter">Email Newsletter</a>
+          </div>
+        </div>
+        <div>
+          <h4>Key Resources</h4>
+          <ul class="feature-list">
+            <li><a href="documents.html#minutes">Meeting Minutes</a></li>
+            <li><a href="documents.html#forms">Forms &amp; Templates</a></li>
+            <li><a href="donate.html">Fundraising Initiatives</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span id="year"></span> Summit Ridge PTA. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
