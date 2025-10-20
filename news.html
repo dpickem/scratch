@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Announcements &amp; Blog | Summit Ridge PTA</title>
+    <link rel="stylesheet" href="assets/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Summit Ridge PTA</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          &#9776;
+        </button>
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="leadership.html">Leadership</a>
+          <a href="membership.html">Membership</a>
+          <a class="active" href="news.html">Announcements</a>
+          <a href="events.html">Events</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="donate.html">Give</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="documents.html">Resources</a>
+          <a href="social.html">Connect</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <h1 class="section-title">News &amp; Announcements</h1>
+        <p class="section-subtitle">
+          Browse the latest updates from Summit Ridge PTA. Use the tags to filter posts by topic
+          and stay informed about fundraising, community events, and advocacy.
+        </p>
+
+        <div class="grid cards">
+          <article class="card">
+            <div>
+              <span class="tag">Events</span>
+              <span class="tag">Fundraising</span>
+            </div>
+            <h3>Spring Carnival Tickets on Sale</h3>
+            <p><strong>Posted March 18</strong> · by Luis Ramirez</p>
+            <p>
+              Purchase early-bird tickets for rides, games, and food trucks. Bundles include
+              unlimited ride wristbands and raffle entries for local business gift cards.
+            </p>
+            <a class="btn outline" href="#">Read More</a>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">Advocacy</span>
+            </div>
+            <h3>School Board Candidate Forum Recap</h3>
+            <p><strong>Posted March 8</strong> · by Jordan Lee</p>
+            <p>
+              Catch up on the top education issues discussed during the forum and learn how the
+              PTA is supporting voter education ahead of the May election.
+            </p>
+            <a class="btn outline" href="#">Read More</a>
+          </article>
+          <article class="card">
+            <div>
+              <span class="tag">Volunteers</span>
+            </div>
+            <h3>Volunteer Spotlight: Library Legends</h3>
+            <p><strong>Posted February 28</strong> · by Samira Ahmed</p>
+            <p>
+              Meet the dedicated parents who keep the library running smoothly and inspire a love
+              of reading. Discover how you can help the team.
+            </p>
+            <a class="btn outline" href="#">Read More</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section two-column">
+        <div>
+          <h2 class="section-title">How to Publish Updates</h2>
+          <p>
+            Because our site is static, each post lives in a Markdown file committed to GitHub.
+            Editors can add new stories by copying the <code>_posts</code> template in the
+            repository and opening a pull request. Once merged into <code>main</code>, GitHub Pages
+            rebuilds the site automatically.
+          </p>
+          <p>
+            Prefer a CMS-like workflow? Connect our repo to <strong>Forestry</strong>,
+            <strong>Netlify CMS</strong>, or <strong>CloudCannon</strong> for visual editing without
+            leaving the browser.
+          </p>
+        </div>
+        <div class="callout">
+          <h3>Organizing Tags</h3>
+          <p>
+            Use consistent tags such as <em>events</em>, <em>fundraising</em>, <em>volunteers</em>,
+            <em>advocacy</em>, and <em>school-news</em> to help families filter updates quickly.
+          </p>
+          <p>
+            For GitHub Pages sites built with Jekyll, include <code>categories:</code> or
+            <code>tags:</code> in front matter so posts automatically populate tag indexes.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h4>Summit Ridge PTA</h4>
+          <p>1234 Summit Ave · Springfield, ST 99999</p>
+          <p>
+            <a href="mailto:info@summitridgepta.org">info@summitridgepta.org</a> ·
+            <a href="tel:18005551234">(800) 555-1234</a>
+          </p>
+        </div>
+        <div>
+          <h4>Stay Connected</h4>
+          <div class="social-links">
+            <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://twitter.com" target="_blank" rel="noopener">X (Twitter)</a>
+            <a href="social.html#newsletter">Email Newsletter</a>
+          </div>
+        </div>
+        <div>
+          <h4>Key Resources</h4>
+          <ul class="feature-list">
+            <li><a href="documents.html#minutes">Meeting Minutes</a></li>
+            <li><a href="documents.html#forms">Forms &amp; Templates</a></li>
+            <li><a href="donate.html">Fundraising Initiatives</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">© <span id="year"></span> Summit Ridge PTA. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

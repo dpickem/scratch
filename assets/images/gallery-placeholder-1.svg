@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b4b8a" />
+      <stop offset="100%" stop-color="#3f77c1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g1)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="600">
+    STEAM Night
+  </text>
+</svg>
